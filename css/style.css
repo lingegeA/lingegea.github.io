@@ -84,9 +84,9 @@ h3,
 h4,
 h5,
 h6 {
-	margin-top: 0;
+	margin: 10px 0;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
-	font-weight: 400;
+	font-weight: 600;
 	font-weight: normal;
 	color: #151515;
 }
@@ -193,13 +193,18 @@ blockquote footer {
 		padding-right: 15px;
 	}
 }
+/* ffffff2a */
 ::selection {
-	color: #ffffff;
-	background: #151515;
+	background: #00000018;
 }
 ::-moz-selection {
- color:#ffffff;
- background:#151515;
+ background:#00000018;
+}
+figure ::selection {
+	background: #ffffff2a;
+}
+figure ::-moz-selection {
+ background:#ffffff2a;
 }
 a, button,
 .sb-close img,
@@ -1200,7 +1205,7 @@ span.sb-caret { /* Caret Down */
 	padding: 70px;
 	display: block;
 	background-color: #000;
-	background-color: rgba(000, 000, 000, .5);
+	background-color: rgba(78, 14, 226, 0.5);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	-khtml-opacity: 1;
 	-moz-opacity: 1;
@@ -3273,6 +3278,9 @@ footer .footer_bottom {
 .readMore a:hover {
 	background-color: gray;
 	color: #fff!important;
+}
+.introh a {
+	color: #3bafda;
 }
 .m-pagination a{
 	color: gray;
