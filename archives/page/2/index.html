@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>实现点击按钮复制信息 | _冬暖_</title>
+  <title>Archives | _冬暖_</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="post-template">
+<body class="home-template">
 -->
 <body id="index" class="lightnav animsition">
       
@@ -171,95 +171,78 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      
-<section id="intro">
-    <div class="container">
-        <div class="row col-md-offset-2">
-            <div class="col-md-8">
-    			<span class="post-meta">
-      <time datetime="2020-07-07T05:33:45.994Z" itemprop="datePublished">
-          2020-07-07
-      </time>
-    
-</span>
-                <h1>实现点击按钮复制信息</h1>
-                <p style="border-bottom: 2px solid #3bafda;"></p>
+      <!-- ============================ Hero Image =========================== -->
+
+<section id="hero" class="scrollme">
+    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                    <div>
+                        
+                        <h2><span>YOU CAN GOT WHAT YOU WNAT.</span></h2>
+                        <p></p>
+                        
+                        <h2></h2>
+                        <p>你可以得到你想要的。</p>
+                        
+
+                    </div>
+                </div>
             </div>
+            <!-- // .col-md-12 -->
         </div>
-        <div class="col-md-8 col-md-offset-2">
-      		<h2 id="创建一个按钮-添加点击事件copyUrl"><a href="#创建一个按钮-添加点击事件copyUrl" class="headerlink" title="创建一个按钮, 添加点击事件copyUrl"></a>创建一个按钮, 添加点击事件copyUrl</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;el-button @click=<span class="string">"copyUrl('我是复制的信息')"</span>&gt;复制&lt;/el-button&gt;</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="JS代码部分"><a href="#JS代码部分" class="headerlink" title="JS代码部分"></a>JS代码部分</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">copyUrl(val) &#123;</span><br><span class="line">  const input = document.createElement(<span class="string">"input"</span>);</span><br><span class="line">  document.body.appendChild(input);</span><br><span class="line">  input.setAttribute(<span class="string">"value"</span>, val);</span><br><span class="line">  input.select();</span><br><span class="line">  <span class="keyword">if</span> (document.execCommand(<span class="string">"copy"</span>)) &#123;</span><br><span class="line">    document.execCommand(<span class="string">"copy"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  document.body.removeChild(input);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>简书: <a href="https://www.jianshu.com/p/daf479e26773" target="_blank" rel="noopener">Server</a></p>
-
-            <div class="clearfix"></div>
-            <hr class="nogutter">
-        </div>
-        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
-    
-    <a class="pull-left" href="/2020/07/08/VerificationCode/" style="float: left;">
-        ← Vue 验证码插件及使用方法
-    </a>
-    
-    
-</nav>
-
-        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
-  /**
-   * 搜狐畅言
-   */
-
-  /*
-  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
-
-  window.onload = function () {
-    (function () {
-      var appid = 'cytXXXX';
-      var conf = 'prod_xxxxxxxxxxxxxxxxx';
-      var width = window.innerWidth || document.documentElement.clientWidth;
-      var loadJs = function (d, a, id) {
-        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
-        var b = document.createElement("script");
-        b.setAttribute("type", "text/javascript");
-        b.setAttribute("charset", "UTF-8");
-        b.setAttribute("src", d);
-        if (id) {
-          b.setAttribute("id", id);
-        }
-        if (typeof a === "function") {
-          if (window.attachEvent) {
-            b.onreadystatechange = function () {
-              var e = b.readyState;
-              if (e === "loaded" || e === "complete") {
-                b.onreadystatechange = null;
-                a()
-              }
-            }
-          } else {
-            b.onload = a
-          }
-        }
-        c.appendChild(b)
-      };
-
-      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
-        window.changyan.api.config({
-          appid: appid,
-          conf: conf
-        })
-      });
-    })();
-  }
-  */
-
-</script>
-</div>
+        <div class="herofade beige-dk"></div>
     </div>
 </section>
 
+<!-- Height spacing helper -->
+<div class="heightblock"></div>
+<!-- // End height spacing helper -->
 
+<!-- ============================ END Hero Image =========================== -->
+
+
+
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row boxes">
+                    
+                    
+                        
+                        
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                            
+                              <h4 class="title"><a href="/2020/07/08/VerificationCode/">Vue 验证码插件及使用方法</a></h4>
+                            
+                            <p><time datetime="2020-07-08T03:01:29.000Z"><a href="/2020/07/08/VerificationCode/">2020-07-08</a></time></p>
+                        </div>
+                    
+                        
+                        
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                            
+                              <h4 class="title"><a href="/2020/07/07/CopyInformation/">实现点击按钮复制信息</a></h4>
+                            
+                            <p><time datetime="2020-07-07T05:33:45.994Z"><a href="/2020/07/07/CopyInformation/">2020-07-07</a></time></p>
+                        </div>
+                    
+                </div>
+            </div>    
+        </div>
+    </div>
+</section> 
+
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+            <p>愿每一个善良的人在每一个善良的日子都被温柔以待。</p>
+        </div>
+    </div>
+</section>
       
 <!-- ============================ Footer =========================== -->
 

@@ -3292,7 +3292,7 @@ footer .footer_bottom {
 	text-overflow: ellipsis;
 	overflow: hidden;
   	white-space: nowrap;
-  	margin-bottom: 10px;
+		margin-bottom: 10px;
 
 }
 .m-pagination a:hover{
@@ -3335,4 +3335,11 @@ footer .footer_bottom {
 
 nav.pagination {
 	display: block;
+}
+nav.pagination a {
+	border-bottom: 2px solid transparent;
+}
+nav.pagination a:hover {
+	color: #3bafda;
+	border-bottom: 2px solid #3bafda;
 }

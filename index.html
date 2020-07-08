@@ -23,7 +23,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content="_冬暖_">
-    <meta name="author" content="John Doe">
+    <meta name="author" content="LingegeA">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -62,7 +62,11 @@
 <body class="home-template">
 -->
 <body id="index" class="lightnav animsition">
-
+      
+      <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 999; pointer-events: none;" ></canvas> 
+      <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+      <script type="text/javascript" src="/js/fireworks.js"></script>
+      
       <!-- ============================ Off-canvas navigation =========================== -->
 
     <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
@@ -205,28 +209,25 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-5">
-                    <h3 class="introh"><a href="/2020/07/07/CopyInformation/">实现点击按钮复制信息</a></h3>
+                    <h3 class="introh"><a href="/2020/07/08/mouseAddExplosionEffect/">给Hexo添加一个鼠标点击爆炸的效果</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2020-07-07T05:33:45.994Z" itemprop="datePublished">
-          2020-07-07
+      <time datetime="2020-07-08T05:24:37.000Z" itemprop="datePublished">
+          2020-07-08
       </time>
     
 </span>
                     </span>
                 </div>
                 <div class="col-md-7">
-                    <p style="height: 100px;overflow: hidden;">
+                    <p style="overflow: hidden;">
                       
-                        创建一个按钮, 添加点击事件copyUrl1&lt;el-button @click="copyUrl('我是复制的信息')"&gt;复制&lt;/el-button&gt;
-
-
-JS代码部分12345678910copyUrl(val) &#123;  const input = document.createElement("input");  document.body.appendChild(input);  input.set
+                        1、在 themes/next/source/js/src 路径下新建 fireworks.jsfireworks.js代码1"use strict";function updateCoords(e)&#123;pointerX=(e.clientX||e.touches[0].clientX)-canvasEl.getBoundingClientRect().left,pointerY=e.clientY||e.touches[0].
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2020/07/07/CopyInformation/">Read More...</a>
+                        <a href="/2020/07/08/mouseAddExplosionEffect/">Read More...</a>
                     </p>
                     
                 </div>
@@ -238,26 +239,33 @@ JS代码部分12345678910copyUrl(val) &#123;  const input = document.createEleme
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-5">
-                    <h3 class="introh"><a href="/2020/07/06/hello-world/">Hello World</a></h3>
+                    <h3 class="introh"><a href="/2020/07/08/MongoDBAndNode/">MongoDB和Node.js编写简单的登录注册跳转</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2020-07-06T07:58:55.996Z" itemprop="datePublished">
-          2020-07-06
+      <time datetime="2020-07-08T03:15:37.000Z" itemprop="datePublished">
+          2020-07-08
       </time>
     
 </span>
                     </span>
                 </div>
                 <div class="col-md-7">
-                    <p style="height: 100px;overflow: hidden;">
+                    <p style="overflow: hidden;">
                       
-                        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new p
+                        简书: Server
+引入express模块1npm i express
+
+引入mongose模块1npm i mongoose --save
+
+引入body-parser模块:用于处理前端 post 请求发送过来的数据1npm install body-parser
+
+
+默认进入注册界面，输入账号密码，点击注册，注册成功后跳转到登录界面，如果已注册，则弹出“此账号已注册！”,登录界面输入账号密码，点击登录，成功则进入首页，失败则弹出“
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2020/07/06/hello-world/">Read More...</a>
+                        <a href="/2020/07/08/MongoDBAndNode/">Read More...</a>
                     </p>
                     
                 </div>
@@ -268,7 +276,7 @@ Quick StartCreate a new p
         
         <nav class="pagination" role="pagination">
           
-          
+          <a class="pull-right" href="/page/2/">PREV ORDERS →</a>
         </nav>
     </div>
 </section>
@@ -288,9 +296,9 @@ Quick StartCreate a new p
     <div class="container">
             <div class="copy">
                 <p>
-                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By John Doe. All Rights Reserved.
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, By LingegeA.
                 </p>
-                <p>Theme By <a href="//go.kieran.top" target="_blank" rel="noopener" style="color: #767D84">Kieran</a></p>
+                <p>---------</p>
             </div>
             <div class="social">
                 <ul>
