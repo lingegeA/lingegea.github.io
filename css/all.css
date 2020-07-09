@@ -2188,13 +2188,26 @@ ul.page-nav i {
 ******************************************************* */
 
 #services {
-	background-color: #FFF;
+	background-color: transparent;
 }
 #services .services-intro {
 	padding: 40px 15px 70px;
 }
-#services .boxes {
+#services .boxes:nth-child(1) {
 	padding-top: 50px;
+}
+#services .boxes>div {
+	background-color: rgba(255, 255, 255, 0.486);
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,.6);
+	margin: 20px 0;
+	border-radius: 10px;
+}
+#services .boxes p {
+	margin: 10px 0;
+}
+#services .boxes>div:hover{
+	background-color: rgba(255, 255, 255, 0.781);
+	transition: all 0.5s;
 }
 #services .boxes .col-md-3,
 #services .boxes .col-md-6 {
@@ -2212,7 +2225,63 @@ ul.page-nav i {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-
+#services h4.title a :after{
+	content: "sad";
+	/* border-bottom: 1px solid red; */
+}
+/* #services h4 a {
+	border-bottom: 2px solid transparent;
+	color: #3bafda;
+}
+#services h4 a:hover {
+	border-bottom: 2px solid #3bafda;
+} */
+.ui-box {
+	text-decoration:none;
+	border:none;
+	font-family:'Roboto', sans-serif;
+	font-size:18px;
+	position:relative;
+	vertical-align:baseline;
+	padding:10px 0;
+	color: #3bafda;
+}
+.bottom-inOutSpread:before,.bottom-inOutSpread:after,.bottom-inOutSpread>.ui-border-element:before,.bottom-inOutSpread>.ui-border-element:after {
+	content:'';
+	position:absolute
+}
+.bottom-inOutSpread:after {
+    border-bottom:2px solid #3bafda;
+    left:51%;
+    right:51%;
+    bottom:0px;
+    -webkit-transition-property:all;
+    -moz-transition-property:all;
+    -o-transition-property:all;
+    transition-property:all;
+    -webkit-transition-timing-function:cubic-bezier(0, 0.98, 0.51, 0.93);
+    -moz-transition-timing-function:cubic-bezier(0, 0.98, 0.51, 0.93);
+    -o-transition-timing-function:cubic-bezier(0, 0.98, 0.51, 0.93);
+    transition-timing-function:cubic-bezier(0, 0.98, 0.51, 0.93);
+    -webkit-transition-duration:200ms;
+    -moz-transition-duration:200ms;
+    -o-transition-duration:200ms;
+    transition-duration:200ms;
+    -webkit-transition-delay:0s;
+    -moz-transition-delay:0s;
+    -o-transition-delay:0s;
+    transition-delay:0s
+}
+.bottom-inOutSpread:hover:after {
+    left:0%;
+    right:0%
+}
+.bottom-inOutSpread:not(:hover):after {
+    -webkit-transition-delay:0s;
+    -moz-transition-delay:0s;
+    -o-transition-delay:0s;
+    transition-delay:0s
+}
 /* *******************************************************
 * FAQ'S, (faq.html)
 ******************************************************* */
