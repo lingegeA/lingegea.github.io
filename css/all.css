@@ -2202,9 +2202,6 @@ ul.page-nav i {
 	margin: 20px 0;
 	border-radius: 10px;
 }
-#services .boxes p {
-	margin: 10px 0;
-}
 #services .boxes>div:hover{
 	background-color: rgba(255, 255, 255, 0.781);
 	transition: all 0.5s;

@@ -200,11 +200,11 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-5">
-                    <h3 class="introh"><a href="/2020/07/14/MysqlNotAllowConnect/">mysql：不允许被远程访问解决方法</a></h3>
+                    <h3 class="introh"><a href="/2020/07/08/mouseAddExplosionEffect/">给Hexo添加一个鼠标点击爆炸的效果</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2020-07-14T01:46:18.000Z" itemprop="datePublished">
-          2020-07-14
+      <time datetime="2020-07-08T05:24:37.000Z" itemprop="datePublished">
+          2020-07-08
       </time>
     
 </span>
@@ -213,18 +213,12 @@
                 <div class="col-md-7">
                     <p style="overflow: hidden;">
                       
-                        
-Host ‘XXXXXXXX’ is not allowed to connect to this MySQL server不允许被远程访问
-
-
-第一步输入：use mysql;
-
-12345mysql&gt; use mysql;Reading table information for completion of table and column namesYou can turn off this feature to get 
+                        1、在 themes/next/source/js/src 路径下新建 fireworks.jsfireworks.js代码1"use strict";function updateCoords(e)&#123;pointerX=(e.clientX||e.touches[0].clientX)-canvasEl.getBoundingClientRect().left,pointerY=e.clientY||e.touches[0].
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2020/07/14/MysqlNotAllowConnect/">Read More...</a>
+                        <a href="/2020/07/08/mouseAddExplosionEffect/">Read More...</a>
                     </p>
                     
                 </div>
@@ -236,11 +230,11 @@ Host ‘XXXXXXXX’ is not allowed to connect to this MySQL server不允许被�
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-5">
-                    <h3 class="introh"><a href="/2020/07/14/MysqlPool/">MySQL创建数据库连接池</a></h3>
+                    <h3 class="introh"><a href="/2020/07/08/MongoDBAndNode/">MongoDB和Node.js编写简单的登录注册跳转</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2020-07-14T01:44:04.000Z" itemprop="datePublished">
-          2020-07-14
+      <time datetime="2020-07-08T03:15:37.000Z" itemprop="datePublished">
+          2020-07-08
       </time>
     
 </span>
@@ -249,14 +243,20 @@ Host ‘XXXXXXXX’ is not allowed to connect to this MySQL server不允许被�
                 <div class="col-md-7">
                     <p style="overflow: hidden;">
                       
-                        适用于Koa2和Express进行连接安装 mysql驱动1npm install mysql --save
+                        简书: Server
+引入express模块1npm i express
 
-创建mysql数据连接池，封装mysql请求123456789101112131415161718192021222324252627282930const mysql = require('mysql');const pool = mysql.createPool(&#123;    host     :  '127.0.0
+引入mongose模块1npm i mongoose --save
+
+引入body-parser模块:用于处理前端 post 请求发送过来的数据1npm install body-parser
+
+
+默认进入注册界面，输入账号密码，点击注册，注册成功后跳转到登录界面，如果已注册，则弹出“此账号已注册！”,登录界面输入账号密码，点击登录，成功则进入首页，失败则弹出“
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2020/07/14/MysqlPool/">Read More...</a>
+                        <a href="/2020/07/08/MongoDBAndNode/">Read More...</a>
                     </p>
                     
                 </div>
@@ -268,11 +268,11 @@ Host ‘XXXXXXXX’ is not allowed to connect to this MySQL server不允许被�
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-5">
-                    <h3 class="introh"><a href="/2020/07/14/SIdentity/">Vue 验证码插件及使用方法</a></h3>
+                    <h3 class="introh"><a href="/2020/07/08/VerificationCode/">Vue 验证码插件及使用方法</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2020-07-14T01:40:40.000Z" itemprop="datePublished">
-          2020-07-14
+      <time datetime="2020-07-08T03:01:29.000Z" itemprop="datePublished">
+          2020-07-08
       </time>
     
 </span>
@@ -281,254 +281,13 @@ Host ‘XXXXXXXX’ is not allowed to connect to this MySQL server不允许被�
                 <div class="col-md-7">
                     <p style="overflow: hidden;">
                       
-                        
-以登录界面为例(效果图)
-
-
-新建验证码组件 SIdentity1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798
+                        简书: Server
+新建验证码组件 SIdentity123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2020/07/14/SIdentity/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-5">
-                    <h3 class="introh"><a href="/2020/07/14/VuePrint/">vue 实现打印功能</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2020-07-14T01:38:55.000Z" itemprop="datePublished">
-          2020-07-14
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-7">
-                    <p style="overflow: hidden;">
-                      
-                        安装插件1npm install vue-print-nb --save
-
-在 main.js 里引入12import Print from 'vue-print-nb';Vue.use(Print);
-
-然后就可以实现打印功能了1234567//这里是个小例子// 通过设置 id 来获取需要打印的区域&lt;div id="print-list" &gt;  &lt;p&gt;这里是要打印的内容&lt;/p&gt;&lt;/div&g
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2020/07/14/VuePrint/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-5">
-                    <h3 class="introh"><a href="/2020/07/14/export/">原生 js 实现导出功能</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2020-07-14T01:36:37.000Z" itemprop="datePublished">
-          2020-07-14
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-7">
-                    <p style="overflow: hidden;">
-                      
-                        对按钮添加点击事件,将下面的代码复制进点击事件里面1234567891011121314151617181920212223242526//要导出的json数据var jsonData = this.tableData;//列标题，逗号隔开，每一个逗号就是隔开一个单元格var str = `姓名,性别,年龄,手机号,地址\n`;//增加\t为了不让表格显示科学计数法或者其他格式for (var i = 0; i &lt; jsonDat
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2020/07/14/export/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-5">
-                    <h3 class="introh"><a href="/2020/07/14/REGEXP/">js 正则表达式去除空格和手机号邮箱验证</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2020-07-14T01:34:02.000Z" itemprop="datePublished">
-          2020-07-14
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-7">
-                    <p style="overflow: hidden;">
-                      
-                        去掉左边空格1let str = msg.replace(/^\s*/g,"");
-
-去掉右边空格1let str =  msg.replace(/\s*$/g,"");
-
-去掉前后空格1let str = msg.replace(/(^\s*)|(\s*$)/g,"");
-
-去掉所有空格1let str = msg.replace(/\s+/g,"");
-
-手机号格式验证1let reg = /^1[3|4|5|6|7|8][0-9]
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2020/07/14/REGEXP/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-5">
-                    <h3 class="introh"><a href="/2020/07/14/calc/">CSS使用calc()函数</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2020-07-14T01:31:01.000Z" itemprop="datePublished">
-          2020-07-14
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-7">
-                    <p style="overflow: hidden;">
-                      
-                        
-要让小盒子占满大盒子剩下的部分，这时候可以设置小盒子高为 100% 或者是100vh减去大盒子的高度50px。只需设置样式使用calc() 函数，它支持 “+”, “-”, “*”, “/” 运算；
-
-注意:
-1.运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)；2.任何长度值都可以使用calc()函数进行计算；3.calc()函数使用标准的数学运算优先级规则；4.它支持 “+”, “-”, “*”
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2020/07/14/calc/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-5">
-                    <h3 class="introh"><a href="/2020/07/14/SVG/">使用SVG画圆环(带填充动画)</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2020-07-14T01:24:17.000Z" itemprop="datePublished">
-          2020-07-14
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-7">
-                    <p style="overflow: hidden;">
-                      
-                        先上效果图
-1.创建组件CircleBar目录,再目录中创建CircleBar组件12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2020/07/14/SVG/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-5">
-                    <h3 class="introh"><a href="/2020/07/09/CopyInformation/">实现点击按钮复制信息</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2020-07-09T09:14:21.298Z" itemprop="datePublished">
-          2020-07-09
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-7">
-                    <p style="overflow: hidden;">
-                      
-                        创建一个按钮, 添加点击事件copyUrl1&lt;el-button @click="copyUrl('我是复制的信息')"&gt;复制&lt;/el-button&gt;
-
-
-JS代码部分12345678910copyUrl(val) &#123;  const input = document.createElement("input");  document.body.appendChild(input);  input.set
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2020/07/09/CopyInformation/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-5">
-                    <h3 class="introh"><a href="/2020/07/09/html2canvas/">html2canvas截图</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2020-07-09T08:21:08.000Z" itemprop="datePublished">
-          2020-07-09
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-7">
-                    <p style="overflow: hidden;">
-                      
-                        原生js方法
-引入html2canvas
-
-1http://html2canvas.hertzen.com/dist/html2canvas.min.js
-
-
-html代码部分
-
-12345678910111213141516171819202122232425262728293031323334&lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;    &lt;meta cha
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2020/07/09/html2canvas/">Read More...</a>
+                        <a href="/2020/07/08/VerificationCode/">Read More...</a>
                     </p>
                     
                 </div>
@@ -538,8 +297,8 @@ html代码部分
         </div>
         
         <nav class="pagination" role="pagination">
+          <a class="pull-left" href="/">← NEXR ORDERS</a>
           
-          <a class="pull-right" href="/page/2/">PREV ORDERS →</a>
         </nav>
     </div>
 </section>
