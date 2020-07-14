@@ -191,6 +191,11 @@
 
 <h4 id="邮箱格式验证"><a href="#邮箱格式验证" class="headerlink" title="邮箱格式验证"></a>邮箱格式验证</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> reg = /^[a-zA-Z0-9_-]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$/;</span><br></pre></td></tr></table></figure>
 
+<h4 id="判断是否是中文"><a href="#判断是否是中文" class="headerlink" title="判断是否是中文"></a>判断是否是中文</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> reg = new RegExp(<span class="string">"[\u4E00-\u9FA5]+"</span>);</span><br></pre></td></tr></table></figure>
+
+<h4 id="判断是否是英文"><a href="#判断是否是英文" class="headerlink" title="判断是否是英文"></a>判断是否是英文</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> reg = new RegExp(<span class="string">"[A-Za-z]+"</span>);</span><br></pre></td></tr></table></figure>
+
+<h4 id="判断是否是数字"><a href="#判断是否是数字" class="headerlink" title="判断是否是数字"></a>判断是否是数字</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> reg = new RegExp(<span class="string">"[0-9]+"</span>);</span><br></pre></td></tr></table></figure>
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
