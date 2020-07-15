@@ -2189,6 +2189,7 @@ ul.page-nav i {
 
 #services {
 	background-color: transparent;
+	min-height: 645px;
 }
 #services .services-intro {
 	padding: 40px 15px 70px;
