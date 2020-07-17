@@ -7,7 +7,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Tag: CSS | _冬暖_</title>
+  <title>CSS变量的使用并通过JS去修改CSS变量修改项目主题 | _冬暖_</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -49,7 +49,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
       
@@ -169,90 +169,109 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <!-- <div>
-                        
-                        <h2></h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p></p>
-                        
-
-                    </div> -->
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<!-- <div class="heightblock"></div> -->
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="row">
-                                <div class="col-lg-8">
-                                
-                                <h4 class="title"><a class="ui-box bottom-inOutSpread" href="/2020/07/17/CssVariable/">CSS变量的使用并通过JS去修改CSS变量修改项目主题</a></h4>
-                                
-                                </div>
-                                <div class="col-lg-4">
-                                    <p><time datetime="2020-07-17T07:20:15.000Z"><a style="color: #3bafda;" href="/2020/07/17/CssVariable/">[-2020-07-17-]</a></time></p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="row">
-                                <div class="col-lg-8">
-                                
-                                <h4 class="title"><a class="ui-box bottom-inOutSpread" href="/2020/07/14/calc/">CSS使用calc()函数</a></h4>
-                                
-                                </div>
-                                <div class="col-lg-4">
-                                    <p><time datetime="2020-07-14T01:31:01.000Z"><a style="color: #3bafda;" href="/2020/07/14/calc/">[-2020-07-14-]</a></time></p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2020-07-17T07:20:15.000Z" itemprop="datePublished">
+          2020-07-17
+      </time>
+    
+    
+    | 
+    <a href='/tags/CSS/'>CSS</a>
+    
+    
+</span>
+                <h1>CSS变量的使用并通过JS去修改CSS变量修改项目主题</h1>
+                <p style="border-bottom: 2px solid #3bafda;"></p>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<h3 id="声明变量"><a href="#声明变量" class="headerlink" title="声明变量"></a>声明变量</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  --color: <span class="comment">#7F583F;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>各种值都可以放入<code>CSS 变量</code>中</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">:root &#123;</span><br><span class="line">  --main-size: 20px;</span><br><span class="line">  --main-bg-rgb: rgb(255,255,255);</span><br><span class="line">  --main-bg-rgba: rgba(255,255,255,.5);</span><br><span class="line">  --main-width: calc(100% - 800px);</span><br><span class="line">  --main-color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>注意: 变量名对大小写敏感,--main-size 和 --Main-Size是两个变量</code></p>
+<h3 id="使用变量"><a href="#使用变量" class="headerlink" title="使用变量"></a>使用变量</h3><p>使用的时候通过<code>var()</code>函数读取变量</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">  background: var(--color);</span><br><span class="line">  font-size: var(--mian-size);</span><br><span class="line">  width: var(--main-width);</span><br><span class="line">  border: 10px solid var(--mian-color);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>愿每一个善良的人在每一个善良的日子都被温柔以待。</p>
+<h3 id="对响应式布局"><a href="#对响应式布局" class="headerlink" title="对响应式布局"></a>对响应式布局</h3><p>CSS 是动态的，页面的任何变化，都会导致采用的规则变化。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  --primary: <span class="comment">#7F583F;</span></span><br><span class="line">  --secondary: <span class="comment">#F7EFD2;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">a &#123;</span><br><span class="line">  color: var(--primary);</span><br><span class="line">  text-decoration-color: var(--secondary);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@media screen and (min-width: 768px) &#123;</span><br><span class="line">  body &#123;</span><br><span class="line">    --primary:  <span class="comment">#F7EFD2;</span></span><br><span class="line">    --secondary: <span class="comment">#7F583F;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="JS操作变量"><a href="#JS操作变量" class="headerlink" title="JS操作变量"></a>JS操作变量</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// 设置变量</span><br><span class="line">document.body.style.setProperty(<span class="string">'--primary'</span>, <span class="string">'#7F583F'</span>);</span><br><span class="line"></span><br><span class="line">// 读取变量</span><br><span class="line">document.body.style.getPropertyValue(<span class="string">'--primary'</span>).trim();</span><br><span class="line">// <span class="string">'#7F583F'</span></span><br><span class="line"></span><br><span class="line">// 删除变量</span><br><span class="line">document.body.style.removeProperty(<span class="string">'--primary'</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span> /&gt;</span><br><span class="line">    &lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width, initial-scale=1.0"</span> /&gt;</span><br><span class="line">    &lt;meta http-equiv=<span class="string">"X-UA-Compatible"</span> content=<span class="string">"ie=edge"</span> /&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">      :root &#123;</span><br><span class="line">        --color: red;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="comment">#div &#123;</span></span><br><span class="line">        margin: 100px auto;</span><br><span class="line">        width: 200px;</span><br><span class="line">        height: 200px;</span><br><span class="line">        background-color: var(--color);</span><br><span class="line">        cursor: pointer;</span><br><span class="line">      &#125;</span><br><span class="line">      p &#123;</span><br><span class="line">        text-align: center;</span><br><span class="line">        color: var(--color);</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div id=<span class="string">"app"</span>&gt;&lt;/div&gt;</span><br><span class="line">    &lt;p&gt;hello world&lt;/p&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    const div = document.getElementById(<span class="string">"app"</span>);</span><br><span class="line">    const htmlStyle = document.documentElement.style;</span><br><span class="line">    div.onclick = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">      <span class="keyword">if</span> (htmlStyle.getPropertyValue(<span class="string">"--color"</span>).trim() === <span class="string">"blue"</span>) &#123;</span><br><span class="line">        htmlStyle.setProperty(<span class="string">"--color"</span>, <span class="string">"red"</span>);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        htmlStyle.setProperty(<span class="string">"--color"</span>, <span class="string">"blue"</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      console.log(htmlStyle.getPropertyValue(<span class="string">"--color"</span>).trim());</span><br><span class="line">    &#125;;</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>参考链接: <a href="http://www.ruanyifeng.com/blog/2017/05/css-variables.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2017/05/css-variables.html</a></p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    
+    <a class="pull-right" href="/2020/07/15/VueFileDownload/">
+        Vue+Element实现文件上传和下载 →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
     </div>
 </section>
+
+
       <!-- ============================ Footer =========================== -->
 
 <footer>
