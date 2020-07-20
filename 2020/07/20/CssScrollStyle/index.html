@@ -7,7 +7,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Tag: Mysql | _冬暖_</title>
+  <title>CSS修改滚动条样式 | _冬暖_</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -49,7 +49,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-bounce.css" rel="stylesheet">
@@ -180,90 +180,95 @@ display: block;
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <!-- <div>
-                        
-                        <h2></h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p></p>
-                        
-
-                    </div> -->
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<!-- <div class="heightblock"></div> -->
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="row">
-                                <div class="col-lg-8">
-                                
-                                <h4 class="title"><a class="ui-box bottom-inOutSpread" href="/2020/07/14/MysqlNotAllowConnect/">mysql：不允许被远程访问解决方法</a></h4>
-                                
-                                </div>
-                                <div class="col-lg-4">
-                                    <p><time datetime="2020-07-14T01:46:18.000Z"><a style="color: #3bafda;" href="/2020/07/14/MysqlNotAllowConnect/">[-2020-07-14-]</a></time></p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="row">
-                                <div class="col-lg-8">
-                                
-                                <h4 class="title"><a class="ui-box bottom-inOutSpread" href="/2020/07/14/MysqlPool/">MySQL创建数据库连接池</a></h4>
-                                
-                                </div>
-                                <div class="col-lg-4">
-                                    <p><time datetime="2020-07-14T01:44:04.000Z"><a style="color: #3bafda;" href="/2020/07/14/MysqlPool/">[-2020-07-14-]</a></time></p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2020-07-20T05:27:50.000Z" itemprop="datePublished">
+          2020-07-20
+      </time>
+    
+    
+    | 
+    <a href='/tags/CSS/'>CSS</a>
+    
+    
+</span>
+                <h1>CSS修改滚动条样式</h1>
+                <p style="border-bottom: 2px solid #3bafda;"></p>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">.div&#123;</span><br><span class="line">  width: 250px;</span><br><span class="line">  height: 100%</span><br><span class="line">  overflow: auto;</span><br><span class="line">&#125;</span><br><span class="line">.div::-webkit-scrollbar &#123;</span><br><span class="line">/*滚动条整体样式*/</span><br><span class="line">  width : 6px;  /*高宽分别对应横竖滚动条的尺寸*/</span><br><span class="line">  height: 1px;</span><br><span class="line">&#125;</span><br><span class="line">.div::-webkit-scrollbar-thumb &#123;</span><br><span class="line">/*滚动条里面小方块*/</span><br><span class="line">  border-radius: 6px;</span><br><span class="line">  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);</span><br><span class="line">  background   : <span class="comment">#999;</span></span><br><span class="line">&#125;</span><br><span class="line">.div::-webkit-scrollbar-track &#123;</span><br><span class="line">/*滚动条里面轨道*/</span><br><span class="line">  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);</span><br><span class="line">  border-radius: 10px;</span><br><span class="line">  background   : <span class="comment">#ededed;</span></span><br><span class="line">  display: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>愿每一个善良的人在每一个善良的日子都被温柔以待。</p>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    
+    <a class="pull-right" href="/2020/07/17/VueInstallComponent/">
+        Vue自定义组件 →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  
+
+</script>
+</div>
     </div>
 </section>
+
+
       <!-- ============================ Footer =========================== -->
 
 <footer>
