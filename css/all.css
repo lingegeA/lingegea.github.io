@@ -3394,6 +3394,10 @@ footer .footer_bottom {
 	max-width: 100%;
 	vertical-align: baseline;
 }
+#intro a.fancybox img {
+	margin: auto;
+	display: block;
+}
 #intro .col-md-8.col-md-offset-2 p a {
   color: #0275d8;
 }
