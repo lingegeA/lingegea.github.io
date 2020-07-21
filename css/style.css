@@ -3414,3 +3414,11 @@ nav.pagination a:hover {
 	color: #3bafda;
 	border-bottom: 2px solid #3bafda;
 }
+
+/* 复制 */
+#copyBtn {
+	cursor: pointer;
+}
+#copyBtn span {
+	color: #fff;
+}
