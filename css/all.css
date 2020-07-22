@@ -21,7 +21,7 @@
 }
 
 *{
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+    font-family: monospace;
 }
 .pace {
 	-webkit-pointer-events: none;
@@ -234,8 +234,9 @@ a.meta,
 	transition: all ease .3s;
 }
 hr {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  /* margin-top: 40px;
+	margin-bottom: 40px; */
+	margin: 10px 0;
 }
 
 /* Vertical aligning */
@@ -3361,7 +3362,11 @@ footer .footer_bottom {
 	color: #fff!important;
 }
 .introh a {
-	color: #3bafda;
+	color: #151515;
+}
+.introh a:hover {
+	color: #337ab7;
+	text-shadow: 8px 5px 4px orangered;
 }
 .m-pagination a{
 	color: gray;
